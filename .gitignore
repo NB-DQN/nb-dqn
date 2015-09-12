@@ -1,9 +1,7 @@
+modules/agent
 modules/environment
 modules/maze_generator
-
-modules/agent
-modules/deterministic_agent
-modules/q_agent
+modules/place_cell
 
 # copied from https://github.com/github/gitignore/blob/master/Python.gitignore
 
