@@ -2,8 +2,9 @@ import modules
 
 import copy
 
-environment = modules.environment.Environment()
-place_cell = modules.place_cell.DeterministicPlaceCell(copy.deepcopy(environment))
+size = (5, 5)
+environment = modules.environment.Environment(size)
+place_cell = modules.place_cell.DeterministicPlaceCell(size)
 agent = modules.agent.DeterministicAgent(place_cell)
 
 environment.maze.display_cui()
