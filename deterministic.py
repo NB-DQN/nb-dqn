@@ -21,7 +21,9 @@ f.write("\n")
 try:
     while not environment.exit():
         agent.set_wall(environment.wall())
-        environment.move(agent.choose_action())
+        action = agent.choose_action()
+        agent.place_cell.move(action, None)
+        environment.move(action)
         f.write(",".join(str(i) for i in environment.current_coordinate))
         f.write('\n')
 except KeyboardInterrupt:
