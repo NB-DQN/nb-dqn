@@ -24,9 +24,6 @@ try:
         action = agent.choose_action()
         agent.place_cell.move(action, environment.current_coordinate)
         environment.move(action)
-        print(agent.place_cell.virtual_coordinate)
-        print(environment.current_coordinate)
-        print('')
         f.write(",".join(str(i) for i in environment.current_coordinate))
         f.write('\n')
 except KeyboardInterrupt:
