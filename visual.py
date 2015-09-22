@@ -5,7 +5,7 @@ import copy
 size = (9, 9)
 environment = modules.environment.Environment(size)
 place_cell = modules.place_cell.VisualPlaceCell(size)
-agent = modules.agent.DeterministicAgent(place_cell)
+agent = modules.agent.NoveltyAgent(place_cell)
 
 environment.maze.display_cui()
 
