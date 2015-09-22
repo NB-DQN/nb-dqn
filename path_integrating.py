@@ -4,12 +4,12 @@ import copy
 
 size = (9, 9)
 environment = modules.environment.Environment(size)
-place_cell = modules.place_cell.PathIntegrateCell(size)
+place_cell = modules.place_cell.PathIntegratingCell(size)
 agent = modules.agent.NoveltyAgent(place_cell)
 
 environment.maze.display_cui()
 
-f = open('path_integrate.log', 'w')
+f = open('path_integrating.log', 'w')
 
 f.write(",".join(str(i) for i in size))
 f.write("\n")
